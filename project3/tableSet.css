@@ -1,0 +1,26 @@
+<style type="text/css">
+table.tableSet {
+	border-width: 5px;
+	border-spacing: 5px;
+	border-style: dotted;
+	border-color: rgb(140, 151, 46);
+	border-collapse: separate;
+	background-color: rgb(255, 255, 240);
+}
+table.tableSet th {
+	border-width: 0px;
+	padding: 0px;
+	border-style: dashed;
+	border-color: blue;
+	background-color: white;
+	-moz-border-radius: ;
+}
+table.tableSet td {
+	border-width: 0px;
+	padding: 0px;
+	border-style: dashed;
+	border-color: blue;
+	background-color: white;
+	-moz-border-radius: ;
+}
+</style>

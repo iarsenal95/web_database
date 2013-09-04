@@ -1,0 +1,58 @@
+#leftColumn{
+		
+		float:left;
+		
+		background-color: white;
+		padding:3px;
+		
+	}
+	
+#rightColumn{
+		
+		float:right;
+	}
+
+.AlbumName,.RMUser{
+	cursor:move;
+   -moz-user-select: -moz-none;   
+   -khtml-user-select: none;   
+   -webkit-user-select: none;   
+   -o-user-select: none;   
+   user-select: none;
+   width: 100px; 
+   height:20px; 
+   padding: 3px;
+	color: rgba(254,255,254,0);
+}
+
+.Trash{
+	width: 200px; 
+	height:200px; 
+	background-color: LightBlue;
+	border: 3px solid white;
+	position:absolute;
+	/*float: left;*/
+	left:50%;
+	margin-left:-300px;
+}
+
+#OtherUsers{
+	width: 200px; 
+	height:200px; 
+	background-color: LightBlue;
+	border: 3px solid white;
+	/*float: right;*/
+	left:50%;
+	margin-left:300px;
+}
+
+table.album {
+	height: 50px;
+	width: 80px;
+
+}
+#thumbnail{
+	height: 100px;
+	width: 100px;
+	
+}

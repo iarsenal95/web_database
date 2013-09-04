@@ -1,0 +1,16 @@
+
+path of pg5largeoutput.txt：
+/home/group23/apache/html/3q6mNp3K/pa5/pagerank/pg5largeoutput.txt
+
+1.	use
+	Make
+ 	to compile
+
+2.	use
+	eecs485pa5p <dvalue> (­k <numiterations> | ­converge <maxchange>) inputnetfile outputfile
+	to run
+	
+3.	We print the procedure of running pankrank on terminal to help you know which part the code is running
+
+
+4.	Thanks for grading :D

@@ -1,0 +1,8 @@
+Explanition For Hits:
+1, To improve the efficiency of caculating Hub and Auth scores, we decide to build the subweb of pages in baseSet using newinlink and newoutlink, which are two hashtables. The (key, value) pairs are (pageid, outlinks of this pageid), and (pageid, inlinks of this pageid).
+They are build as follows:
+We travese the rootSet and select the top h_value pages. If we get pageid p1, for example, we will get the top 50 inlinks and outlinks of p1. If p1->p2 is selected, we will update the newoutlink (p1, p2) and at the same time, update the newinlink(p2, p1), which means p1 is the incoming link for p2. The tricky part is: if p2 is also selected as the top h_value pages in rootSet, we get the top 50 inlinks and outlinks of p2. If p1 is not among the 50 pages selected for p2, p1 is still used as inlinks of p2 when computing the hub and auth scores.
+
+2, When caculating the hub and auth scores, we use the newinlink and newoutlink as the subgraph. If one page has no outlinks, its hub score will be the same as its previous round. If one page has no inlinks, its auth score will be the same as its previous round. 
+
+
